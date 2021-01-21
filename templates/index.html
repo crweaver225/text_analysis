@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <title>txt analysis</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+    </head>
+<body>
+	<div class="ui container">
+<h2>Text Analytics</h2>
+<p>Enter two diferent texts below and hit submit to see their simularity scores.</p>
+
+<form action="/compare_texts" method="post">
+	<table>
+     <tr>
+    	<th>text 1</th>
+    	<th>text 2</th>
+ 	 </tr>
+	<tr>
+    	<td> <textarea name="Text1" cols="40" rows="5">{{txt1}}</textarea> </td>
+        <td> <textarea name="Text2" cols="40" rows="5">{{txt2}}</textarea> </td>
+    </tr>
+	</table>
+	  <br><br>
+	
+  <input type="submit" value="Compare text">
+</form>
+<br></br>
+<p>{{analytics}}</p>
+</div>
+</body>
+</html>
